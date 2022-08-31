@@ -39,7 +39,7 @@ def setdetails(request):
         b= float(data['b'])
         lstat= float(data['lstat'])
 
-        model = open(r'F:\Desktop\Aquib extras\Machine Learning\Real Estate\backend\house.pkl','rb')
+        model = open(r'house.pkl','rb')
         test = pickle.load(model)
         features= np.array([[ crim ,  zn , indus, chas , nox , 
         rm , age , dis  ,rad , tax , 
