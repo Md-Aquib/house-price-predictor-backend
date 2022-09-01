@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mdlqyz1%@l4f02+oien)7ne3hd&6&jjve2fn4$!7i0pmkv0++r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['house-price-prediction-backend.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -128,4 +128,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOWED_ORIGINS = [
+    "https://dainty-kulfi-4e3ad7.netlify.app/",
+]
